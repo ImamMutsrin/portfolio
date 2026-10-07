@@ -1,0 +1,213 @@
+/* a) Element selector: Menargetkan elemen dasar HTML */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf9f6; 
+    color: #2d3436;
+}
+p {
+    line-height: 1.8;
+    font-size: 1.05em;
+    color: #636e72;
+}
+
+/* e) Group selector: Mengatur gaya gabungan untuk semua heading */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #2d3436;
+    margin-top: 0;
+}
+
+/* c) ID selector: Menargetkan kerangka utama header dan footer */
+#main-header {
+    background-color: transparent;
+    padding: 30px 0;
+    text-align: center;
+}
+#main-footer {
+    background-color: #2d3436;
+    color: #dfe6e9;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 60px;
+}
+
+/* d) Descendant selector: Mengatur desain teks menu di dalam navigasi */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #636e72;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* f) Pseudo-class selector: Efek interaktif saat disentuh atau diklik */
+nav ul li a:hover, nav ul li a.active {
+    color: #e17055; 
+}
+button:active {
+    transform: translateY(2px);
+}
+
+/* b) Class selector: Mendesain kartu proyek dan foto profil */
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    border: 1px solid #f1f2f6;
+    transition: 0.3s ease;
+}
+.card:hover {
+    box-shadow: 0 15px 30px rgba(225, 112, 85, 0.1);
+    border-color: #e17055;
+}
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 8px solid #ffffff;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* g) Attribute selector: Mengatur gaya khusus untuk form input bertipe teks */
+input[type="text"] {
+    padding: 15px 20px;
+    width: 65%;
+    border: 2px solid #dfe6e9;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 1em;
+    outline: none;
+    transition: 0.3s;
+}
+input[type="text"]:focus {
+    border-color: #e17055;
+}
+
+/* --- Pengaturan Layout Khusus --- */
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+.hero-content {
+    width: 55%;
+}
+.hero-visual {
+    width: 40%;
+    text-align: center;
+}
+.greeting {
+    color: #e17055;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+.highlight {
+    font-size: 3.5em;
+    margin: 10px 0;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+.role {
+    font-size: 1.2em;
+    color: #2d3436;
+    font-weight: 500;
+}
+.btn-primary {
+    background-color: #e17055;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: #d63031;
+}
+.section-box {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+}
+.transparent-bg {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+.tags-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.tag {
+    background-color: #ffeaa7;
+    color: #d35400;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/* Tambahan Layout Kontak Sosial Media */
+.contact-wrapper {
+    margin-top: 25px;
+}
+.social-links {
+    margin-bottom: 25px;
+}
+.social-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #e17055;
+    font-weight: 600;
+    border: 2px solid #ffeaa7;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    background-color: #e17055;
+    color: white;
+    border-color: #e17055;
+}
+.contact-form {
+    display: flex;
+    gap: 15px;
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
